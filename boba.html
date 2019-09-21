@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bobaland</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Custom styles for this template -->
+    <link href="agency.min.css" rel="stylesheet">
+    <link href="agency.css" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/0bc0e47658.js"></script>
+
+    <style>
+        /* Carousel style Make the image fully responsive */
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Creating star review */
+        .checked {
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- First part -->
+    <!-- NavBar color-->
+    <nav class="navbar navbar-expand-sm brown navbar-light">
+
+        <!-- NavBar logo -->
+        <a class="navbar-brand" href="#">
+            <img src="https://ih1.redbubble.net/image.708007360.0073/pp,650x642-pad,750x1000,f8f8f8.u1.jpg" alt="logo"
+                style="width:40px;">Bobaland
+        </a>
+
+
+        <!-- NavBar -->
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Second part -->
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner">
+
+            <!-- First slide -->
+            <div class="carousel-item active">
+                <img src="https://static.businessinsider.sg/2019/02/zb-bubbletea.jpg" alt="Los Angeles" width="1100"
+                    height="500">
+                <div class="carousel-caption">
+                    <h3>Los Angeles</h3>
+                    <p>We had such a great time in LA!</p>
+                </div>
+            </div>
+
+            <!-- Second slide -->
+            <div class="carousel-item">
+                <img src="https://static.businessinsider.sg/2019/02/zb-bubbletea.jpg" alt="Chicago" width="1100"
+                    height="500">
+                <div class="carousel-caption">
+                    <h3>Chicago</h3>
+                    <p>Thank you, Chicago!</p>
+                </div>
+            </div>
+
+            <!-- Third slide -->
+            <div class="carousel-item">
+                <img src="https://static.businessinsider.sg/2019/02/zb-bubbletea.jpg" alt="New York" width="1100"
+                    height="500">
+                <div class="carousel-caption">
+                    <h3>New York</h3>
+                    <p>We love the Big Apple!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Previous slide -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+
+        <!-- Next slide -->
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+
+    <!-- Third part -->
+    <!-- Middle of the page -->
+    <div class="jumbotron jumbotron-fluid bg-dark text-light">
+        <div class="container">
+            <h1 class="display-4">Welcome to Bobaland</h1>
+            <p class="lead">
+                Suitable for Boba cravers.
+            </p>
+        </div>
+    </div>
+
+    <!-- Portfolio Grid -->
+    <section class="bg-light page-section" id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase">Different Boba Brands</h2>
+                    <h3 class="section-subheading text-muted">Gotta Try 'Em all?</h3>
+                </div>
+            </div>
+
+            <!-- Boba #1 -->
+            <div class="row">
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fas fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="BobaImg/TeaLive.jpg" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Tealives</h4>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>
+
+                <!-- Boba #2 -->
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fas fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="BobaImg/Alley.jpg" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>The Alley</h4>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                </div>
+
+                <!-- Boba #3 -->
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fas fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="BobaImg/daboba.png" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Daboba</h4>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>
+
+                <!-- Boba #4 -->
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fas fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="BobaImg/Gong-Cha.png" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Gong Cha</h4>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>
+
+                <!-- Boba #5 -->
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fas fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="BobaImg/Coji.jpg" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Cojiitii</h4>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>
+
+                <!-- Boba #6 -->
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fas fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="BobaImg/Chatime.jpg" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Chatime</h4>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2 class="text-uppercase">Tealive</h2>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <p></p>
+                                <img class="img-fluid d-block mx-auto" src="BobaImg/TeaLive.jpg" alt="">
+                                <p>Tealive is more than just tea.
+                                    <br>
+                                    It's a point of view, a way of life.
+                                    <br>
+                                    It's daring to be your best
+                                    <br>
+                                    to breakthrough barriers, obstacles and challenges
+                                    <br>
+                                    to achieve your dreams
+                                    <br>
+                                    to make the world a happier place.</p>
+                                <ul class="list-inline">
+                                    <li>Born: 2010</li>
+                                    <li>Origin: Malaysia</li>
+                                    <li>Website: <a href="https://www.tealive.com.my/" target="_blank">Tealive</a>
+                                    </li>
+                                </ul>
+
+                                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                    <i class="fas fa-times"></i>
+                                    Close Tealive</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2 class="text-uppercase">The Alley</h2>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <p></p>
+                                <img class="img-fluid d-block mx-auto" src="BobaImg/Alley.jpg" alt="">
+                                <p>Making our own sugar cane syrup
+                                    <br>
+                                    Freshly handcrafted tapioca
+                                    <br>
+                                    Carefully selected tea leaves
+                                </p>
+                                <ul class="list-inline">
+                                    <li>Born: 2013</li>
+                                    <li>Origin: Taiwan</li>
+                                    <li>Website: <a href="http://www.the-alley.my/" target="_blank">The Alley</a>
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                    <i class="fas fa-times"></i>
+                                    Close The Alley</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2 class="text-uppercase">Daboba</h2>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <p></p>
+                                <img class="img-fluid d-block mx-auto" src="BobaImg/daboba.png" alt="">
+                                <p>- Love you in your heart -
+                                    <br>
+                                    - Pursue a touch of sweetness -
+                                </p>
+                                <ul class="list-inline">
+                                    <li>Born: 2018</li>
+                                    <li>Origin: Taiwan</li>
+                                    <li>Website: <a href="https://www.daboba.my/" target="_blank">Daboba</a>
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                    <i class="fas fa-times"></i>
+                                    Close Daboba</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2 class="text-uppercase">Gong Cha</h2>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <p></p>
+                                <img class="img-fluid d-block mx-auto" src="BobaImg/Gong-Cha.png" alt="">
+                                <p>Great Tea, From Taiwan to the World</p>
+                                <ul class="list-inline">
+                                    <li>Born: 2006</li>
+                                    <li>Origin: Taiwan</li>
+                                    <li>Website: <a href="https://www.gong-cha.com/en" target="_blank">Gong Cha</a>
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                    <i class="fas fa-times"></i>
+                                    Close Gong Cha</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 5 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2 class="text-uppercase">Cojiitii</h2>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <p></p>
+                                <img class="img-fluid d-block mx-auto" src="BobaImg/Coji.jpg" alt="">
+                                <p>We Are Sharing Our Taste Of Happiness To Our Customer.
+                                    <br>
+                                    Whether It Be A First Date, Family Outing, Or Your Go-To Lunch Break,
+                                    We Wish Every Visit To Be A Memorable One.
+                                    <br>
+                                    Nothing Makes Us Happier Than Seeing Our
+                                    Customers Happy!</p>
+                                <ul class="list-inline">
+                                    <li>Born: 2018</li>
+                                    <li>Origin: Malaysia</li>
+                                    <li>Website: <a href="https://www.cojiitii.com/" target="_blank">Cojiitii</a>
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                    <i class="fas fa-times"></i>
+                                    Close Cojiitii</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 6 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2 class="text-uppercase">Chatime</h2>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <p></p>
+                                <img class="img-fluid d-block mx-auto" src="BobaImg/Chatime.jpg" alt="">
+                                <p>Our promise of quality means that we’re serving our customers the best tea based
+                                    drinks in the world.</p>
+                                <ul class="list-inline">
+                                    <li>Born: 2010</li>
+                                    <li>Origin: Malaysia</li>
+                                    <li>Website: <a href="https://chatimemalaysia.com/" target="_blank">Chatime</a>
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                    <i class="fas fa-times"></i>
+                                    Close Chatime</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/agency.min.js"></script>
+
+</body>
+
+</html>
